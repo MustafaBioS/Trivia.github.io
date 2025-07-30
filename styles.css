@@ -1,0 +1,117 @@
+body {
+    overflow: hidden;
+    background-color: #f4f2ef;
+}
+#app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 700px;
+    width: 600px;
+    background-color: #F4DBDB;
+    border: 1px transparent solid;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+}
+
+#title {
+    width: 100%;
+    margin-top: 80px;
+    font-size: 50px;
+    font-family: 'Press Start 2P', monospace;
+    color: #CD4662;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.loading {
+    font-size: 50px;
+    color: #CD4662;
+    font-family: 'Press Start 2P', monospace;
+    margin-top: 50%;
+    max-width: 90%;
+    text-align: center;
+}
+
+.NQL {
+    font-size: 50px;
+    color: #CD4662;
+    font-family: 'Press Start 2P', monospace;
+    margin-top: 50%;
+    max-width: 90%;
+    text-align: center;
+}
+
+.queCon {
+    display: flex;
+    justify-content: center;
+}
+
+.questions {
+    font-size: 35px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 90%;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.btnCon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+   
+}
+
+.answers {
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: #aec289;
+    color: #f4f2ef;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);  
+    transition: transform 0.3 ease, box-shadow  0.3 ease;
+}
+
+.answers:hover {
+    background-color: #CD4662;
+    cursor: pointer;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#score {
+    font-size: 30px;
+    font-family: 'Press Start 2P', monospace;
+    color: white;
+    text-align: center;
+}
+
+.incorrect {
+    color: red !important;
+}
+
+.correct {
+    color: lightgreen !important;
+}
